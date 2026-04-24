@@ -1,29 +1,27 @@
 # Agentic Customer Support Dashboard
 
-A professional, real-time analytics dashboard for monitoring agentic customer support interactions. This dashboard provides deep insights into conversation volumes, sender distribution, sentiment trends, and resolution metrics, all powered by Supabase and Vite.
+A professional, real-time analytics and monitoring dashboard designed as the control center for the **Agentic Customer Support System**. This dashboard provides visibility into the multi-agent orchestration, sentiment trends, and human escalation pipelines powered by n8n, Supabase, and Groq.
 
 ![Dashboard Preview](https://github.com/esachdev28/agentic-customer-support-company-dashboard/raw/main/src/assets/hero.png)
 
 ## 🚀 Features
 
-- **Real-time Metrics**: Live updates of conversation counts and sender types (User, Bot, Agent, Escalations).
-- **Conversation Logs**: Filterable live feed of all support messages with sender-specific styling.
+- **System-Wide Analytics**: Monitor the performance of the entire multi-agent pipeline, including the Intake Classifier and FAQ agents.
+- **Real-time Metrics**: Live updates of conversation counts and sender types (User, Bot, Agent, Escalations) via Supabase WebSockets.
+- **Sentiment Monitoring**: Visualize the output of the Sentiment & Safety Analyzer to track customer satisfaction and identify urgent escalations.
+- **Resolution Tracking**: Analyze the effectiveness of the FAQ (RAG) agent vs. human interventions.
+- **Conversation Logs**: A live, filterable feed of all support messages, including those bypassed for human-in-the-loop support.
 - **Interactive Charts**:
   - **Volume Trends**: Message volume over time using `Recharts`.
-  - **Sender Distribution**: Visual breakdown of who is handling your support requests.
-- **Advanced Filtering**: Filter data by sender type and date ranges (24h, 7d, 30d, All Time).
-- **Supabase Integration**: Real-time Postgres subscriptions for instant dashboard updates.
-- **Modern UI/UX**: Sleek dark-mode interface built with Tailwind CSS, featuring glassmorphism and smooth animations.
+  - **Sender Distribution**: Visual breakdown of how queries are handled (Bot vs. Agent vs. Escalation).
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Ecosystem
 
-- **Framework**: [React 19](https://react.dev/)
-- **Build Tool**: [Vite 8](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/)
-- **Database/Real-time**: [Supabase](https://supabase.com/)
-- **Charts**: [Recharts](https://recharts.org/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Date Handling**: [date-fns](https://date-fns.org/)
+This dashboard is the monitoring layer of the **Agentic Customer Support System**, integrating with:
+- **Core Intelligence**: n8n (Orchestration), Groq (LLM), Pinecone (Vector DB), and Google Gemini (Embeddings).
+- **Backend/Real-time**: [Supabase](https://supabase.com/) (Postgres + Realtime WebSockets).
+- **Frontend**: [React 19](https://react.dev/) + [Vite 8](https://vitejs.dev/).
+- **Visualization**: [Recharts](https://recharts.org/) & [Tailwind CSS 3](https://tailwindcss.com/).
 
 ## 📁 Project Structure
 
